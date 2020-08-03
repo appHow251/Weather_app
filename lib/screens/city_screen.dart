@@ -7,6 +7,8 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
+  String cityName;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +46,7 @@ class _CityScreenState extends State<CityScreen> {
                     // store that value and pass it to our
                     // WeatherModel.
                     onChanged: (value) {
-                      print(value);
+                      cityName = value;
                     }),
               ),
               FlatButton(
