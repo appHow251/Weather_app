@@ -34,11 +34,18 @@ class _CityScreenState extends State<CityScreen> {
               Container(
                 padding: EdgeInsets.all(20.0),
                 child: TextField(
-                  style: TextStyle(
-                    color: Colors.black87,
-                  ),
-                  decoration: kTextFieldInputDecoration,
-                ),
+                    style: TextStyle(
+                      color: Colors.black87,
+                    ),
+                    decoration: kTextFieldInputDecoration,
+
+                    // to get the weather for a city that is inputted in city_screen
+                    // use onChanged and pass it a value. Now we just need to
+                    // store that value and pass it to our
+                    // WeatherModel.
+                    onChanged: (value) {
+                      print(value);
+                    }),
               ),
               FlatButton(
                 onPressed: () {},
