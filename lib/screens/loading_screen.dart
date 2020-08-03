@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/services/location.dart';
 import 'package:weather_app/services/networking.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import 'location_screen.dart';
 
@@ -39,6 +40,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+        body: Center(
+            child: SpinKitFadingCircle(
+      color: Colors.white,
+      size: 100.0,
+    )));
   }
 }
