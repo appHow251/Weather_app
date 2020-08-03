@@ -19,12 +19,14 @@ class WeatherModel {
     }
   }
 
+  // from appbrewery.co
+
   String getMessage(int temp) {
-    if (temp > 25) {
+    if (temp > 80) {
       return 'It\'s 🍦 time';
-    } else if (temp > 20) {
+    } else if (temp > 65) {
       return 'Time for shorts and 👕';
-    } else if (temp < 10) {
+    } else if (temp < 55) {
       return 'You\'ll need 🧣 and 🧤';
     } else {
       return 'Bring a 🧥 just in case';
