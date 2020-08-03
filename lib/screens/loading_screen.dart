@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/services/location.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 const apiKey = '81489127d7cd773b14c6b5fc40ef08dc';
 
